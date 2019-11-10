@@ -4,19 +4,20 @@
   "description": "Ground-up SPA keep dependencies to a minimum.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickdaniele/dunder-proto.git"
   },
   "author": "Nick Daniele",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nickdaniele/dunder-proto/issues"
   },
   "homepage": "https://github.com/nickdaniele/dunder-proto#readme",
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
