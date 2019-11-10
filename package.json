@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nickdaniele/dunder-proto/issues"
   },
-  "homepage": "https://github.com/nickdaniele/dunder-proto#readme"
+  "homepage": "https://github.com/nickdaniele/dunder-proto#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
 }
