@@ -4,7 +4,8 @@
   "description": "Ground-up SPA keep dependencies to a minimum.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config prod.config.js",
+    "start": "webpack-dev-server --config dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/nickdaniele/dunder-proto#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
