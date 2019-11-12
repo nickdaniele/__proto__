@@ -4,6 +4,10 @@ const common = require('./webpack.common.js');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const postcssimport = require('postcss-import');
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
+const purgecss = require('@fullhuman/postcss-purgecss');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -16,7 +20,26 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                postcssimport,
+                tailwindcss,
+                autoprefixer,
+                purgecss({
+                  content: ['./src/main.js', './src/components/*/**.js'],
+                  defaultExtractor: content =>
+                    content.match(/[A-Za-z0-9-_:/]+/g) || []
+                })
+              ]
+            }
+          }
+        ]
       }
     ]
   }

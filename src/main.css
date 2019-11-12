@@ -1,3 +1,4 @@
-p {
-  color: red;
-}
+@import 'tailwindcss/base';
+@import 'general';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
