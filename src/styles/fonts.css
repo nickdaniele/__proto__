@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Brandon Grotesque Regular'),
-    url('fonts/brandon-grotesque/Brandon_reg.woff') format('woff');
+    url('../assets/fonts/Brandon_reg.woff') format('woff');
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-style: normal;
   font-weight: normal;
   src: local('IBM Plex Mono Regular'),
-    url('fonts/ibm-plex-mono/IBMPlexMono-Regular.woff') format('woff');
+    url('../assets/fonts/IBMPlexMono-Regular.woff') format('woff');
 }
