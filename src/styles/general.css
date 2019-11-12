@@ -1,0 +1,7 @@
+body {
+  @apply font-brandon;
+}
+
+p {
+  @apply text-orange font-ibm;
+}

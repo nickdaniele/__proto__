@@ -1,7 +1,0 @@
-body {
-  @apply font-sans;
-}
-
-p {
-  @apply text-red-600;
-}

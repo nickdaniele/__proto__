@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Brandon Grotesque Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Regular'),
+    url('fonts/brandon-grotesque/Brandon_reg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Regular Italic'),
+    url('fonts/brandon-grotesque/Brandon_reg_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Thin'),
+    url('fonts/brandon-grotesque/Brandon_thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Thin Italic'),
+    url('fonts/brandon-grotesque/Brandon_thin_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Light'),
+    url('fonts/brandon-grotesque/Brandon_light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Light Italic'),
+    url('fonts/brandon-grotesque/Brandon_light_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Medium'),
+    url('fonts/brandon-grotesque/Brandon_med.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Medium Italic'),
+    url('fonts/brandon-grotesque/Brandon_med_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Bold'),
+    url('fonts/brandon-grotesque/Brandon_bld.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Bold Italic'),
+    url('fonts/brandon-grotesque/Brandon_bld_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Black'),
+    url('fonts/brandon-grotesque/Brandon_blk.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Black Italic'),
+    url('fonts/brandon-grotesque/Brandon_blk_it.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Regular'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Thin'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Thin Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono ExtraLight'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono ExtraLight Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono ExtraLight Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-ExtraLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Light'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Light Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Medium'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Medium Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono SemiBold'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono SemiBold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono SemiBold Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Bold'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IBM Plex Mono Bold Italic'),
+    url('fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff') format('woff');
+}
