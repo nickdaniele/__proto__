@@ -1,8 +1,8 @@
 import './styles/main.css';
+import './app.js';
 
 (function starter() {
-  const greeting = document.createElement('p');
-  greeting.innerText = 'Hello World!';
+  const app = document.createElement('app-root');
 
-  document.body.append(greeting);
+  document.body.append(app);
 })();
