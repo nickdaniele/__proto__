@@ -19,7 +19,6 @@
   "homepage": "https://github.com/nickdaniele/dunder-proto#readme",
   "devDependencies": {
     "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@fullhuman/postcss-purgecss": "^1.3.0",
     "autoprefixer": "^9.7.1",
