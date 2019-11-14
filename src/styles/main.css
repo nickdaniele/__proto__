@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import 'fonts';
 @import 'general';
+@import 'custom';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
