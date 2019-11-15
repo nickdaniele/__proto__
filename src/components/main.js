@@ -53,7 +53,6 @@ class Main extends LitElement {
 
 		this.blogClasses = {
 			'w-1/2': true,
-			'border-b': true,
 			'border-r': true,
 			'border-solid': true,
 			'border-black': true,
@@ -64,9 +63,6 @@ class Main extends LitElement {
 
 		this.socialClasses = {
 			'w-1/2': true,
-			'border-b': true,
-			'border-solid': true,
-			'border-black': true,
 			'hover:bg-blue': true,
 			'cursor-pointer': true,
 			'flex-grow': false
