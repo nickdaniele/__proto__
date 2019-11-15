@@ -8,7 +8,7 @@ class Header extends LitElement {
 	render() {
 		return html`
 			<header class="py-4 text-center border-b border-solid border-black">
-				__proto__
+				<div class="inline-block cursor-pointer">__proto__</div>
 			</header>
 		`;
 	}

@@ -1,3 +1,11 @@
 .h-custom {
 	height: 94%;
 }
+
+.h-inherit {
+	height: inherit;
+}
+
+.h-collapsed {
+	height: 52.73px;
+}
