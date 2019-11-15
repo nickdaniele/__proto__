@@ -155,8 +155,8 @@ class Main extends LitElement {
 					...{ 'w-1/2': true }
 				};
 
-				this.tutorialsClasses = {
-					...this.tutorialsClasses,
+				this.tutorialClasses = {
+					...this.tutorialClasses,
 					...{ 'w-1/2': true }
 				};
 
@@ -186,8 +186,8 @@ class Main extends LitElement {
 					...{ 'w-1/2': true }
 				};
 
-				this.tutorialsClasses = {
-					...this.tutorialsClasses,
+				this.tutorialClasses = {
+					...this.tutorialClasses,
 					...{ 'w-1/2': true }
 				};
 
