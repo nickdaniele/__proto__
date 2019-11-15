@@ -71,10 +71,17 @@ class Main extends LitElement {
 
 	selectSection(section) {
 		/**
-		 * Add h-inherit to expanded row.
-		 * Add h-52px to collapsed row.
-		 * Add flex-grow to clicked section
-		 * Remove widths from all sections of row. (w-1/2)
+		 * Enable h-inherit of expanded row.
+		 * Disable h-52px of expanded row.
+		 * Disable h-inherit of collapsed row.
+		 * Enable h-52px of collapsed row.
+		 * Enable flex-grow of clicked section.
+		 * Disable w-1/2 of clicked section.
+		 * Disable hover:bg-color of clicked section
+		 * Disable cursor-pointer of clicked section
+		 * Disable flex-grow of not clicked section of same row.
+		 * Disable w-1/2 of not clicked section of same row.
+		 * Enable w-1/2 of not clicked sections of different row.
 		 */
 		switch (section) {
 			case 'about':
@@ -90,22 +97,32 @@ class Main extends LitElement {
 
 				this.aboutClasses = {
 					...this.aboutClasses,
-					...{ 'flex-grow': true, 'w-1/2': false }
+					...{
+						'flex-grow': true,
+						'w-1/2': false,
+						'hover:bg-orange': false,
+						'cursor-pointer': false
+					}
 				};
 
 				this.tutorialClasses = {
 					...this.tutorialClasses,
-					...{ 'flex-grow': false, 'w-1/2': false }
+					...{
+						'flex-grow': false,
+						'w-1/2': false,
+						'hover:bg-yellow': true,
+						'cursor-pointer': true
+					}
 				};
 
 				this.blogClasses = {
 					...this.blogClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
 				};
 
 				this.socialClasses = {
 					...this.socialClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
 				};
 				break;
 			case 'tutorial':
@@ -121,22 +138,32 @@ class Main extends LitElement {
 
 				this.aboutClasses = {
 					...this.aboutClasses,
-					...{ 'flex-grow': false, 'w-1/2': false }
+					...{
+						'flex-grow': false,
+						'w-1/2': false,
+						'hover:bg-orange': true,
+						'cursor-pointer': true
+					}
 				};
 
 				this.tutorialClasses = {
 					...this.tutorialClasses,
-					...{ 'flex-grow': true, 'w-1/2': false }
+					...{
+						'flex-grow': true,
+						'w-1/2': false,
+						'hover:bg-yellow': false,
+						'cursor-pointer': false
+					}
 				};
 
 				this.blogClasses = {
 					...this.blogClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
 				};
 
 				this.socialClasses = {
 					...this.socialClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
 				};
 				break;
 			case 'blog':
@@ -152,22 +179,32 @@ class Main extends LitElement {
 
 				this.aboutClasses = {
 					...this.aboutClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
 				};
 
 				this.tutorialClasses = {
 					...this.tutorialClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
 				};
 
 				this.blogClasses = {
 					...this.blogClasses,
-					...{ 'flex-grow': true, 'w-1/2': false }
+					...{
+						'flex-grow': true,
+						'w-1/2': false,
+						'hover:bg-green': false,
+						'cursor-pointer': false
+					}
 				};
 
 				this.socialClasses = {
 					...this.socialClasses,
-					...{ 'flex-grow': false, 'w-1/2': false }
+					...{
+						'flex-grow': false,
+						'w-1/2': false,
+						'hover:bg-blue': true,
+						'cursor-pointer': true
+					}
 				};
 				break;
 			case 'social':
@@ -183,22 +220,32 @@ class Main extends LitElement {
 
 				this.aboutClasses = {
 					...this.aboutClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
 				};
 
 				this.tutorialClasses = {
 					...this.tutorialClasses,
-					...{ 'w-1/2': true }
+					...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
 				};
 
 				this.blogClasses = {
 					...this.blogClasses,
-					...{ 'flex-grow': false, 'w-1/2': false }
+					...{
+						'flex-grow': false,
+						'w-1/2': false,
+						'hover:bg-green': true,
+						'cursor-pointer': true
+					}
 				};
 
 				this.socialClasses = {
 					...this.socialClasses,
-					...{ 'flex-grow': true, 'w-1/2': false }
+					...{
+						'flex-grow': true,
+						'w-1/2': false,
+						'hover:bg-blue': false,
+						'cursor-pointer': false
+					}
 				};
 				break;
 		}
