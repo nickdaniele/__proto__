@@ -77,11 +77,15 @@ class Main extends LitElement {
 		 * Enable h-52px of collapsed row.
 		 * Enable flex-grow of clicked section.
 		 * Disable w-1/2 of clicked section.
-		 * Disable hover:bg-color of clicked section
-		 * Disable cursor-pointer of clicked section
+		 * Disable hover:bg-[color] of clicked section.
+		 * Disable cursor-pointer of clicked section.
 		 * Disable flex-grow of not clicked section of same row.
 		 * Disable w-1/2 of not clicked section of same row.
+		 * Enable hover:bg-[color] of not clicked section of same row.
+		 * Enable cursor-pointer of not clicked section of same row.
 		 * Enable w-1/2 of not clicked sections of different row.
+		 * Enable hover:bg-[color] of not clicked sections of different row.
+		 * Enable cursor-pointer of not clicked sections of different row.
 		 */
 		switch (section) {
 			case 'about':
