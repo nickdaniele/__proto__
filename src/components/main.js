@@ -101,6 +101,16 @@ class Main extends LitElement {
 					...this.tutorialClasses,
 					...{ 'flex-grow': false, 'w-1/2': false }
 				};
+
+				this.blogClasses = {
+					...this.blogClasses,
+					...{ 'w-1/2': true }
+				};
+
+				this.socialClasses = {
+					...this.socialClasses,
+					...{ 'w-1/2': true }
+				};
 				break;
 			case 'tutorial':
 				this.rowOneClasses = {
@@ -122,6 +132,16 @@ class Main extends LitElement {
 					...this.tutorialClasses,
 					...{ 'flex-grow': true, 'w-1/2': false }
 				};
+
+				this.blogClasses = {
+					...this.blogClasses,
+					...{ 'w-1/2': true }
+				};
+
+				this.socialClasses = {
+					...this.socialClasses,
+					...{ 'w-1/2': true }
+				};
 				break;
 			case 'blog':
 				this.rowOneClasses = {
@@ -132,6 +152,16 @@ class Main extends LitElement {
 				this.rowTwoClasses = {
 					...this.rowTwoClasses,
 					...{ 'h-inherit': true, 'h-52px': false }
+				};
+
+				this.aboutClasses = {
+					...this.aboutClasses,
+					...{ 'w-1/2': true }
+				};
+
+				this.tutorialsClasses = {
+					...this.tutorialsClasses,
+					...{ 'w-1/2': true }
 				};
 
 				this.blogClasses = {
@@ -153,6 +183,16 @@ class Main extends LitElement {
 				this.rowTwoClasses = {
 					...this.rowTwoClasses,
 					...{ 'h-inherit': true, 'h-52px': false }
+				};
+
+				this.aboutClasses = {
+					...this.aboutClasses,
+					...{ 'w-1/2': true }
+				};
+
+				this.tutorialsClasses = {
+					...this.tutorialsClasses,
+					...{ 'w-1/2': true }
 				};
 
 				this.blogClasses = {
