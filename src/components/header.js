@@ -4,7 +4,7 @@ class Header extends LitElement {
 	sectionReset() {
 		this.dispatchEvent(
 			new CustomEvent('section-select', {
-				detail: { section: 'reset' }
+				detail: { section: 'none' }
 			})
 		);
 	}
