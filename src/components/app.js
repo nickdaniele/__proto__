@@ -1,7 +1,7 @@
+import { LitElement, html } from 'lit-element';
+
 import './header';
 import './main';
-
-import { LitElement, html } from 'lit-element';
 
 class App extends LitElement {
 	static get properties() {
@@ -25,8 +25,6 @@ class App extends LitElement {
 	}
 
 	render() {
-		const sectionSelected = this.sectionSelected;
-
 		return html`
 			<div class="h-full">
 				<app-header
@@ -35,7 +33,7 @@ class App extends LitElement {
 					}}"
 				></app-header>
 				<app-main
-					sectionSelected="${sectionSelected}"
+					sectionSelected="${this.sectionSelected}"
 					@section-select="${event => {
 						this.sectionSelect(event);
 					}}"

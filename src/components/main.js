@@ -1,6 +1,11 @@
 import { LitElement, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 
+import './about';
+import './tutorial';
+import './blog';
+import './social';
+
 class Main extends LitElement {
 	static get properties() {
 		return {
@@ -16,6 +21,13 @@ class Main extends LitElement {
 
 	constructor() {
 		super();
+
+		this.sectionMapping = {
+			one: 'about',
+			two: 'tutorial',
+			three: 'blog',
+			four: 'social'
+		};
 
 		this.rowOneClasses = {
 			flex: true,
@@ -325,51 +337,47 @@ class Main extends LitElement {
 	}
 
 	render() {
+		const mappedSection = this.sectionMapping[this.sectionSelected] || 'none';
 		this.updatedClasses();
-
-		const rowOneClasses = classMap(this.rowOneClasses);
-		const rowTwoClasses = classMap(this.rowTwoClasses);
-		const sectionOneClasses = classMap(this.sectionOneClasses);
-		const sectionTwoClasses = classMap(this.sectionTwoClasses);
-		const sectionThreeClasses = classMap(this.sectionThreeClasses);
-		const sectionFourClasses = classMap(this.sectionFourClasses);
 
 		return html`
 			<main class="flex flex-wrap h-custom">
-				<div class="${rowOneClasses}">
+				<div class="${classMap(this.rowOneClasses)}">
 					<div
-						class="${sectionOneClasses}"
+						class="${classMap(this.sectionOneClasses)}"
 						@click="${() => {
 							this.sectionSelect('one');
 						}}"
 					>
-						<div class="p-2">About</div>
+						<section-about sectionSelected="${mappedSection}"></section-about>
 					</div>
 					<div
-						class="${sectionTwoClasses}"
+						class="${classMap(this.sectionTwoClasses)}"
 						@click="${() => {
 							this.sectionSelect('two');
 						}}"
 					>
-						<div class="p-2">Tutorials</div>
+						<section-tutorial
+							sectionSelected="${mappedSection}"
+						></section-tutorial>
 					</div>
 				</div>
-				<div class="${rowTwoClasses}">
+				<div class="${classMap(this.rowTwoClasses)}">
 					<div
-						class="${sectionThreeClasses}"
+						class="${classMap(this.sectionThreeClasses)}"
 						@click="${() => {
 							this.sectionSelect('three');
 						}}"
 					>
-						<div class="p-2">Blog</div>
+						<section-blog sectionSelected="${mappedSection}"></section-blog>
 					</div>
 					<div
-						class="${sectionFourClasses}"
+						class="${classMap(this.sectionFourClasses)}"
 						@click="${() => {
 							this.sectionSelect('four');
 						}}"
 					>
-						<div class="p-2">Social</div>
+						<section-social sectionSelected="${mappedSection}"></section-social>
 					</div>
 				</div>
 			</main>
