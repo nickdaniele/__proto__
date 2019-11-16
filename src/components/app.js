@@ -318,6 +318,13 @@ class App extends LitElement {
 	}
 
 	render() {
+		const rowOneClasses = JSON.stringify(this.rowOneClasses);
+		const rowTwoClasses = JSON.stringify(this.rowTwoClasses);
+		const sectionOneClasses = JSON.stringify(this.sectionOneClasses);
+		const sectionTwoClasses = JSON.stringify(this.sectionTwoClasses);
+		const sectionThreeClasses = JSON.stringify(this.sectionThreeClasses);
+		const sectionFourClasses = JSON.stringify(this.sectionFourClasses);
+
 		return html`
 			<div class="h-full">
 				<app-header
@@ -326,12 +333,12 @@ class App extends LitElement {
 					}}"
 				></app-header>
 				<app-main
-					rowOneClasses="${JSON.stringify(this.rowOneClasses)}"
-					rowTwoClasses="${JSON.stringify(this.rowTwoClasses)}"
-					sectionOneClasses="${JSON.stringify(this.sectionOneClasses)}"
-					sectionTwoClasses="${JSON.stringify(this.sectionTwoClasses)}"
-					sectionThreeClasses="${JSON.stringify(this.sectionThreeClasses)}"
-					sectionFourClasses="${JSON.stringify(this.sectionFourClasses)}"
+					rowOneClasses="${rowOneClasses}"
+					rowTwoClasses="${rowTwoClasses}"
+					sectionOneClasses="${sectionOneClasses}"
+					sectionTwoClasses="${sectionTwoClasses}"
+					sectionThreeClasses="${sectionThreeClasses}"
+					sectionFourClasses="${sectionFourClasses}"
 					@section-select="${event => {
 						this.sectionSelect(event);
 					}}"
