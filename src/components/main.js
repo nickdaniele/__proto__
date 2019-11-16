@@ -26,11 +26,18 @@ class Main extends LitElement {
 	}
 
 	render() {
+		const rowOneClasses = classMap(this.rowOneClasses);
+		const rowTwoClasses = classMap(this.rowTwoClasses);
+		const sectionOneClasses = classMap(this.sectionOneClasses);
+		const sectionTwoClasses = classMap(this.sectionTwoClasses);
+		const sectionThreeClasses = classMap(this.sectionThreeClasses);
+		const sectionFourClasses = classMap(this.sectionFourClasses);
+
 		return html`
 			<main class="flex flex-wrap h-custom">
-				<div class="${classMap(this.rowOneClasses)}">
+				<div class="${rowOneClasses}">
 					<div
-						class="${classMap(this.sectionOneClasses)}"
+						class="${sectionOneClasses}"
 						@click="${() => {
 							this.sectionSelect('one');
 						}}"
@@ -38,7 +45,7 @@ class Main extends LitElement {
 						<div class="p-2">About</div>
 					</div>
 					<div
-						class="${classMap(this.sectionTwoClasses)}"
+						class="${sectionTwoClasses}"
 						@click="${() => {
 							this.sectionSelect('two');
 						}}"
@@ -46,9 +53,9 @@ class Main extends LitElement {
 						<div class="p-2">Tutorials</div>
 					</div>
 				</div>
-				<div class="${classMap(this.rowTwoClasses)}">
+				<div class="${rowTwoClasses}">
 					<div
-						class="${classMap(this.sectionThreeClasses)}"
+						class="${sectionThreeClasses}"
 						@click="${() => {
 							this.sectionSelect('three');
 						}}"
@@ -56,7 +63,7 @@ class Main extends LitElement {
 						<div class="p-2">Blog</div>
 					</div>
 					<div
-						class="${classMap(this.sectionFourClasses)}"
+						class="${sectionFourClasses}"
 						@click="${() => {
 							this.sectionSelect('four');
 						}}"
