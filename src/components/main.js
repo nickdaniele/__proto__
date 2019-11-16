@@ -6,10 +6,10 @@ class Main extends LitElement {
 		return {
 			rowOneClasses: { type: Object },
 			rowTwoClasses: { type: Object },
-			aboutClasses: { type: Object },
-			tutorialClasses: { type: Object },
-			blogClasses: { type: Object },
-			socialClasses: { type: Object }
+			sectionOneClasses: { type: Object },
+			sectionTwoClasses: { type: Object },
+			sectionThreeClasses: { type: Object },
+			sectionFourClasses: { type: Object }
 		};
 	}
 
@@ -30,17 +30,17 @@ class Main extends LitElement {
 			<main class="flex flex-wrap h-custom">
 				<div class="${classMap(this.rowOneClasses)}">
 					<div
-						class="${classMap(this.aboutClasses)}"
+						class="${classMap(this.sectionOneClasses)}"
 						@click="${() => {
-							this.sectionSelect('about');
+							this.sectionSelect('one');
 						}}"
 					>
 						<div class="p-2">About</div>
 					</div>
 					<div
-						class="${classMap(this.tutorialClasses)}"
+						class="${classMap(this.sectionTwoClasses)}"
 						@click="${() => {
-							this.sectionSelect('tutorial');
+							this.sectionSelect('two');
 						}}"
 					>
 						<div class="p-2">Tutorials</div>
@@ -48,17 +48,17 @@ class Main extends LitElement {
 				</div>
 				<div class="${classMap(this.rowTwoClasses)}">
 					<div
-						class="${classMap(this.blogClasses)}"
+						class="${classMap(this.sectionThreeClasses)}"
 						@click="${() => {
-							this.sectionSelect('blog');
+							this.sectionSelect('three');
 						}}"
 					>
 						<div class="p-2">Blog</div>
 					</div>
 					<div
-						class="${classMap(this.socialClasses)}"
+						class="${classMap(this.sectionFourClasses)}"
 						@click="${() => {
-							this.sectionSelect('social');
+							this.sectionSelect('four');
 						}}"
 					>
 						<div class="p-2">Social</div>

@@ -8,10 +8,10 @@ class App extends LitElement {
 		return {
 			rowOneClasses: { type: Object },
 			rowTwoClasses: { type: Object },
-			aboutClasses: { type: Object },
-			tutorialClasses: { type: Object },
-			blogClasses: { type: Object },
-			socialClasses: { type: Object }
+			sectionOneClasses: { type: Object },
+			sectionTwoClasses: { type: Object },
+			sectionThreeClasses: { type: Object },
+			sectionFourClasses: { type: Object }
 		};
 	}
 
@@ -32,7 +32,7 @@ class App extends LitElement {
 			'h-52px': false
 		};
 
-		this.aboutClasses = {
+		this.sectionOneClasses = {
 			'w-1/2': true,
 			'border-b': true,
 			'border-r': true,
@@ -43,7 +43,7 @@ class App extends LitElement {
 			'flex-grow': false
 		};
 
-		this.tutorialClasses = {
+		this.sectionTwoClasses = {
 			'w-1/2': true,
 			'border-b': true,
 			'border-solid': true,
@@ -53,7 +53,7 @@ class App extends LitElement {
 			'flex-grow': false
 		};
 
-		this.blogClasses = {
+		this.sectionThreeClasses = {
 			'w-1/2': true,
 			'border-r': true,
 			'border-solid': true,
@@ -63,7 +63,7 @@ class App extends LitElement {
 			'flex-grow': false
 		};
 
-		this.socialClasses = {
+		this.sectionFourClasses = {
 			'w-1/2': true,
 			'hover:bg-blue': true,
 			'cursor-pointer': true,
@@ -93,7 +93,7 @@ class App extends LitElement {
 		 */
 
 		switch (section) {
-			case '__proto__':
+			case 'reset':
 				this.rowOneClasses = {
 					flex: true,
 					'w-full': true,
@@ -108,7 +108,7 @@ class App extends LitElement {
 					'h-52px': false
 				};
 
-				this.aboutClasses = {
+				this.sectionOneClasses = {
 					'w-1/2': true,
 					'border-b': true,
 					'border-r': true,
@@ -119,7 +119,7 @@ class App extends LitElement {
 					'flex-grow': false
 				};
 
-				this.tutorialClasses = {
+				this.sectionTwoClasses = {
 					'w-1/2': true,
 					'border-b': true,
 					'border-solid': true,
@@ -129,7 +129,7 @@ class App extends LitElement {
 					'flex-grow': false
 				};
 
-				this.blogClasses = {
+				this.sectionThreeClasses = {
 					'w-1/2': true,
 					'border-r': true,
 					'border-solid': true,
@@ -139,14 +139,14 @@ class App extends LitElement {
 					'flex-grow': false
 				};
 
-				this.socialClasses = {
+				this.sectionFourClasses = {
 					'w-1/2': true,
 					'hover:bg-blue': true,
 					'cursor-pointer': true,
 					'flex-grow': false
 				};
 				break;
-			case 'about':
+			case 'one':
 				this.rowOneClasses = {
 					...this.rowOneClasses,
 					...{ 'h-inherit': true, 'h-52px': false }
@@ -157,8 +157,8 @@ class App extends LitElement {
 					...{ 'h-inherit': false, 'h-52px': true }
 				};
 
-				this.aboutClasses = {
-					...this.aboutClasses,
+				this.sectionOneClasses = {
+					...this.sectionOneClasses,
 					...{
 						'flex-grow': true,
 						'w-1/2': false,
@@ -167,8 +167,8 @@ class App extends LitElement {
 					}
 				};
 
-				this.tutorialClasses = {
-					...this.tutorialClasses,
+				this.sectionTwoClasses = {
+					...this.sectionTwoClasses,
 					...{
 						'flex-grow': false,
 						'w-1/2': false,
@@ -177,17 +177,17 @@ class App extends LitElement {
 					}
 				};
 
-				this.blogClasses = {
-					...this.blogClasses,
+				this.sectionThreeClasses = {
+					...this.sectionThreeClasses,
 					...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
 				};
 
-				this.socialClasses = {
-					...this.socialClasses,
+				this.sectionFourClasses = {
+					...this.sectionFourClasses,
 					...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
 				};
 				break;
-			case 'tutorial':
+			case 'two':
 				this.rowOneClasses = {
 					...this.rowOneClasses,
 					...{ 'h-inherit': true, 'h-52px': false }
@@ -198,8 +198,8 @@ class App extends LitElement {
 					...{ 'h-inherit': false, 'h-52px': true }
 				};
 
-				this.aboutClasses = {
-					...this.aboutClasses,
+				this.sectionOneClasses = {
+					...this.sectionOneClasses,
 					...{
 						'flex-grow': false,
 						'w-1/2': false,
@@ -208,8 +208,8 @@ class App extends LitElement {
 					}
 				};
 
-				this.tutorialClasses = {
-					...this.tutorialClasses,
+				this.sectionTwoClasses = {
+					...this.sectionTwoClasses,
 					...{
 						'flex-grow': true,
 						'w-1/2': false,
@@ -218,17 +218,17 @@ class App extends LitElement {
 					}
 				};
 
-				this.blogClasses = {
-					...this.blogClasses,
+				this.sectionThreeClasses = {
+					...this.sectionThreeClasses,
 					...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
 				};
 
-				this.socialClasses = {
-					...this.socialClasses,
+				this.sectionFourClasses = {
+					...this.sectionFourClasses,
 					...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
 				};
 				break;
-			case 'blog':
+			case 'three':
 				this.rowOneClasses = {
 					...this.rowOneClasses,
 					...{ 'h-inherit': false, 'h-52px': true }
@@ -239,18 +239,18 @@ class App extends LitElement {
 					...{ 'h-inherit': true, 'h-52px': false }
 				};
 
-				this.aboutClasses = {
-					...this.aboutClasses,
+				this.sectionOneClasses = {
+					...this.sectionOneClasses,
 					...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
 				};
 
-				this.tutorialClasses = {
-					...this.tutorialClasses,
+				this.sectionTwoClasses = {
+					...this.sectionTwoClasses,
 					...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
 				};
 
-				this.blogClasses = {
-					...this.blogClasses,
+				this.sectionThreeClasses = {
+					...this.sectionThreeClasses,
 					...{
 						'flex-grow': true,
 						'w-1/2': false,
@@ -259,8 +259,8 @@ class App extends LitElement {
 					}
 				};
 
-				this.socialClasses = {
-					...this.socialClasses,
+				this.sectionFourClasses = {
+					...this.sectionFourClasses,
 					...{
 						'flex-grow': false,
 						'w-1/2': false,
@@ -269,7 +269,7 @@ class App extends LitElement {
 					}
 				};
 				break;
-			case 'social':
+			case 'four':
 				this.rowOneClasses = {
 					...this.rowOneClasses,
 					...{ 'h-inherit': false, 'h-52px': true }
@@ -280,18 +280,18 @@ class App extends LitElement {
 					...{ 'h-inherit': true, 'h-52px': false }
 				};
 
-				this.aboutClasses = {
-					...this.aboutClasses,
+				this.sectionOneClasses = {
+					...this.sectionOneClasses,
 					...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
 				};
 
-				this.tutorialClasses = {
-					...this.tutorialClasses,
+				this.sectionTwoClasses = {
+					...this.sectionTwoClasses,
 					...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
 				};
 
-				this.blogClasses = {
-					...this.blogClasses,
+				this.sectionThreeClasses = {
+					...this.sectionThreeClasses,
 					...{
 						'flex-grow': false,
 						'w-1/2': false,
@@ -300,8 +300,8 @@ class App extends LitElement {
 					}
 				};
 
-				this.socialClasses = {
-					...this.socialClasses,
+				this.sectionFourClasses = {
+					...this.sectionFourClasses,
 					...{
 						'flex-grow': true,
 						'w-1/2': false,
@@ -328,10 +328,10 @@ class App extends LitElement {
 				<app-main
 					rowOneClasses="${JSON.stringify(this.rowOneClasses)}"
 					rowTwoClasses="${JSON.stringify(this.rowTwoClasses)}"
-					aboutClasses="${JSON.stringify(this.aboutClasses)}"
-					tutorialClasses="${JSON.stringify(this.tutorialClasses)}"
-					blogClasses="${JSON.stringify(this.blogClasses)}"
-					socialClasses="${JSON.stringify(this.socialClasses)}"
+					sectionOneClasses="${JSON.stringify(this.sectionOneClasses)}"
+					sectionTwoClasses="${JSON.stringify(this.sectionTwoClasses)}"
+					sectionThreeClasses="${JSON.stringify(this.sectionThreeClasses)}"
+					sectionFourClasses="${JSON.stringify(this.sectionFourClasses)}"
 					@section-select="${event => {
 						this.sectionSelect(event);
 					}}"
