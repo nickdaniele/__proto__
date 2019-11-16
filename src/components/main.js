@@ -69,7 +69,13 @@ class Main extends LitElement {
 		};
 	}
 
-	selectSection(section) {
+	sectionSelect(section) {
+		this.dispatchEvent(
+			new CustomEvent('section-select', {
+				detail: { section }
+			})
+		);
+
 		/**
 		 * Enable h-inherit of expanded row.
 		 * Disable h-52px of expanded row.
@@ -87,6 +93,7 @@ class Main extends LitElement {
 		 * Enable hover:bg-[color] of not clicked sections of different row.
 		 * Enable cursor-pointer of not clicked sections of different row.
 		 */
+
 		switch (section) {
 			case 'about':
 				this.rowOneClasses = {
@@ -266,7 +273,7 @@ class Main extends LitElement {
 					<div
 						class="${classMap(this.aboutClasses)}"
 						@click="${() => {
-							this.selectSection('about');
+							this.sectionSelect('about');
 						}}"
 					>
 						<div class="p-2">About</div>
@@ -274,7 +281,7 @@ class Main extends LitElement {
 					<div
 						class="${classMap(this.tutorialClasses)}"
 						@click="${() => {
-							this.selectSection('tutorial');
+							this.sectionSelect('tutorial');
 						}}"
 					>
 						<div class="p-2">Tutorials</div>
@@ -284,7 +291,7 @@ class Main extends LitElement {
 					<div
 						class="${classMap(this.blogClasses)}"
 						@click="${() => {
-							this.selectSection('blog');
+							this.sectionSelect('blog');
 						}}"
 					>
 						<div class="p-2">Blog</div>
@@ -292,7 +299,7 @@ class Main extends LitElement {
 					<div
 						class="${classMap(this.socialClasses)}"
 						@click="${() => {
-							this.selectSection('social');
+							this.sectionSelect('social');
 						}}"
 					>
 						<div class="p-2">Social</div>

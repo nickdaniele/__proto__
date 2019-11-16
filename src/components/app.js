@@ -4,6 +4,11 @@ import './main';
 import { LitElement, html } from 'lit-element';
 
 class App extends LitElement {
+	sectionSelect(event) {
+		const section = event.detail.section;
+		console.log(section);
+	}
+
 	createRenderRoot() {
 		return this;
 	}
@@ -12,7 +17,11 @@ class App extends LitElement {
 		return html`
 			<div class="h-full">
 				<app-header></app-header>
-				<app-main></app-main>
+				<app-main
+					@section-select="${event => {
+						this.sectionSelect(event);
+					}}"
+				></app-main>
 			</div>
 		`;
 	}
