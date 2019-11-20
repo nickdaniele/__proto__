@@ -16,9 +16,9 @@ class Header extends LitElement {
 	render() {
 		return html`
 			<header class="py-4 text-center border-b border-solid border-black">
-				<div class="inline-block cursor-pointer" @click="${this.sectionReset}">
+				<h1 class="inline-block cursor-pointer" @click="${this.sectionReset}">
 					__proto__
-				</div>
+				</h1>
 			</header>
 		`;
 	}

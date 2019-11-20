@@ -15,12 +15,14 @@ class Blog extends LitElement {
 		const selected = this.sectionSelected === 'blog';
 
 		return html`
-			<div class="p-2">Blog</div>
-			${selected
-				? html`
-						<div class="px-2"></div>
-				  `
-				: null}
+			<div class="p-2">
+				<h2 class="pb-2">Blog</h2>
+				${selected
+					? html`
+							<div></div>
+					  `
+					: null}
+			</div>
 		`;
 	}
 }

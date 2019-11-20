@@ -15,12 +15,14 @@ class Social extends LitElement {
 		const selected = this.sectionSelected === 'social';
 
 		return html`
-			<div class="p-2">Social</div>
-			${selected
-				? html`
-						<div class="px-2"></div>
-				  `
-				: null}
+			<div class="p-2">
+				<h2 class="pb-2">Social</h2>
+				${selected
+					? html`
+							<div></div>
+					  `
+					: null}
+			</div>
 		`;
 	}
 }

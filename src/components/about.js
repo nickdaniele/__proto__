@@ -15,12 +15,14 @@ class About extends LitElement {
 		const selected = this.sectionSelected === 'about';
 
 		return html`
-			<div class="p-2">About</div>
-			${selected
-				? html`
-						<div class="px-2"></div>
-				  `
-				: null}
+			<div class="p-2">
+				<h2 class="pb-2">About</h2>
+				${selected
+					? html`
+							<div></div>
+					  `
+					: null}
+			</div>
 		`;
 	}
 }

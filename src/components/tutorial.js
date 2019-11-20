@@ -15,12 +15,24 @@ class Tutorial extends LitElement {
 		const selected = this.sectionSelected === 'tutorial';
 
 		return html`
-			<div class="p-2">Tutorials</div>
-			${selected
-				? html`
-						<div class="px-2"></div>
-				  `
-				: null}
+			<div class="p-2">
+				<h2 class="pb-2">Tutorials</h2>
+				${selected
+					? html`
+							<ul>
+								<li class="cursor-pointer hover:underline">
+									Some Post One
+								</li>
+								<li class="cursor-pointer hover:underline">
+									Some Post Two
+								</li>
+								<li class="cursor-pointer hover:underline">
+									Some Post Three
+								</li>
+							</ul>
+					  `
+					: null}
+			</div>
 		`;
 	}
 }
