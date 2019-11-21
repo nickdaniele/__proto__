@@ -19,5 +19,6 @@ module.exports = {
       brandon: ['Brandon Grotesque Regular', 'san-serif'],
       ibm: ['IBM Plex Mono Regular', 'san-serif']
     }
-  }
+  },
+  plugins: [require('tailwindcss-transitions')()]
 };
