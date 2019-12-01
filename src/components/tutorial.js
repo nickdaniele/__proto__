@@ -7,6 +7,14 @@ class Tutorial extends LitElement {
     };
   }
 
+  contentSelect() {
+    this.dispatchEvent(
+      new CustomEvent('content-select', {
+        detail: { title: 'sometitle' }
+      })
+    );
+  }
+
   createRenderRoot() {
     return this;
   }
@@ -20,13 +28,28 @@ class Tutorial extends LitElement {
         ${selected
           ? html`
               <ul>
-                <li class="cursor-pointer hover:underline">
+                <li
+                  class="cursor-pointer hover:underline"
+                  @click="${() => {
+                    this.contentSelect();
+                  }}"
+                >
                   &lt Coming Soon &gt
                 </li>
-                <li class="cursor-pointer hover:underline">
+                <li
+                  class="cursor-pointer hover:underline"
+                  @click="${() => {
+                    this.contentSelect();
+                  }}"
+                >
                   &lt Coming Soon &gt
                 </li>
-                <li class="cursor-pointer hover:underline">
+                <li
+                  class="cursor-pointer hover:underline"
+                  @click="${() => {
+                    this.contentSelect();
+                  }}"
+                >
                   &lt Coming Soon &gt
                 </li>
               </ul>
