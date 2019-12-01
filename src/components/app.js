@@ -7,7 +7,8 @@ import './modal';
 class App extends LitElement {
   static get properties() {
     return {
-      sectionSelected: { type: String }
+      sectionSelected: { type: String },
+      modalStatus: { type: String }
     };
   }
 
@@ -15,11 +16,23 @@ class App extends LitElement {
     super();
 
     this.sectionSelected = 'none';
+    this.modalStatus = 'closed';
   }
 
+  // Events Handlers //////////////////
   sectionSelect(event) {
     this.sectionSelected = event.detail.section;
   }
+
+  contentSelect(event) {
+    console.log('/// contentSelect ///');
+    console.log(event);
+  }
+
+  modalChange(status) {
+    this.modalStatus = status;
+  }
+  /////////////////////////////////////
 
   createRenderRoot() {
     return this;
@@ -38,8 +51,17 @@ class App extends LitElement {
           @section-select="${event => {
             this.sectionSelect(event);
           }}"
+          @content-select="${event => {
+            this.contentSelect(event);
+            this.modalChange('open');
+          }}"
         ></app-main>
-        <app-modal></app-modal>
+        <app-modal
+          modalStatus="${this.modalStatus}"
+          @close="${() => {
+            this.modalChange('close');
+          }}"
+        ></app-modal>
       </div>
     `;
   }
