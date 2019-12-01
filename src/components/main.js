@@ -37,7 +37,7 @@ class Main extends LitElement {
     };
 
     this.rowTwoClasses = {
-      flex: true,
+      'flex': true,
       'w-full': true,
       'h-inherit': false,
       'h-53px': false
@@ -356,22 +356,22 @@ class Main extends LitElement {
           <div
             class="${classMap(this.sectionOneClasses)}"
             @click="${() => {
-        this.sectionSelect('one');
-      }}"
+              this.sectionSelect('one');
+            }}"
           >
             <section-about sectionSelected="${mappedSection}"></section-about>
           </div>
           <div
             class="${classMap(this.sectionTwoClasses)}"
             @click="${() => {
-        this.sectionSelect('two');
-      }}"
+              this.sectionSelect('two');
+            }}"
           >
             <section-tutorial
               sectionSelected="${mappedSection}"
               @content-select="${event => {
-        this.contentSelect(event);
-      }}"
+                this.contentSelect(event);
+              }}"
             ></section-tutorial>
           </div>
         </div>
@@ -379,16 +379,16 @@ class Main extends LitElement {
           <div
             class="${classMap(this.sectionThreeClasses)}"
             @click="${() => {
-        this.sectionSelect('three');
-      }}"
+              this.sectionSelect('three');
+            }}"
           >
             <section-blog sectionSelected="${mappedSection}"></section-blog>
           </div>
           <div
             class="${classMap(this.sectionFourClasses)}"
             @click="${() => {
-        this.sectionSelect('four');
-      }}"
+              this.sectionSelect('four');
+            }}"
           >
             <section-social sectionSelected="${mappedSection}"></section-social>
           </div>
