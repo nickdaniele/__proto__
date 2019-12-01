@@ -1,11 +1,15 @@
 .h-custom {
-	height: 94%;
+  height: calc(100% - 3.39rem);
 }
 
 .h-inherit {
-	height: inherit;
+  height: inherit;
 }
 
-.h-52px {
-	height: 52.73px;
+.h-53px {
+  height: 53.75px;
+}
+
+.w-custom {
+  width: calc(100% - 1rem);
 }
