@@ -26,35 +26,35 @@ class Tutorial extends LitElement {
       <div class="p-2">
         <h2 class="pb-2">Tutorials</h2>
         ${selected
-          ? html`
+        ? html`
               <ul>
                 <li
                   class="cursor-pointer hover:underline"
                   @click="${() => {
-                    this.contentSelect();
-                  }}"
+            this.contentSelect();
+          }}"
                 >
                   &lt Coming Soon &gt
                 </li>
                 <li
                   class="cursor-pointer hover:underline"
                   @click="${() => {
-                    this.contentSelect();
-                  }}"
+            this.contentSelect();
+          }}"
                 >
                   &lt Coming Soon &gt
                 </li>
                 <li
                   class="cursor-pointer hover:underline"
                   @click="${() => {
-                    this.contentSelect();
-                  }}"
+            this.contentSelect();
+          }}"
                 >
                   &lt Coming Soon &gt
                 </li>
               </ul>
             `
-          : null}
+        : null}
       </div>
     `;
   }

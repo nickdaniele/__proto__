@@ -43,24 +43,24 @@ class App extends LitElement {
       <div class="h-full">
         <app-header
           @section-select="${event => {
-            this.sectionSelect(event);
-          }}"
+        this.sectionSelect(event);
+      }}"
         ></app-header>
         <app-main
           sectionSelected="${this.sectionSelected}"
           @section-select="${event => {
-            this.sectionSelect(event);
-          }}"
+        this.sectionSelect(event);
+      }}"
           @content-select="${event => {
-            this.contentSelect(event);
-            this.modalChange('open');
-          }}"
+        this.contentSelect(event);
+        this.modalChange('open');
+      }}"
         ></app-main>
         <app-modal
           modalStatus="${this.modalStatus}"
           @close="${() => {
-            this.modalChange('close');
-          }}"
+        this.modalChange('close');
+      }}"
         ></app-modal>
       </div>
     `;

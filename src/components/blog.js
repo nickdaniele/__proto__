@@ -18,7 +18,7 @@ class Blog extends LitElement {
       <div class="p-2">
         <h2 class="pb-2">Blog</h2>
         ${selected
-          ? html`
+        ? html`
               <ul>
                 <li class="cursor-pointer hover:underline">
                   &lt Coming Soon &gt
@@ -31,7 +31,7 @@ class Blog extends LitElement {
                 </li>
               </ul>
             `
-          : null}
+        : null}
       </div>
     `;
   }
