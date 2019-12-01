@@ -6,8 +6,3 @@ body {
   @apply h-full;
   @apply font-brandon;
 }
-
-p {
-  @apply text-orange;
-  @apply font-ibm;
-}
