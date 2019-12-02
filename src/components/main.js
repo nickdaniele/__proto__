@@ -48,8 +48,8 @@ class Main extends LitElement {
       'border-b': true,
       'border-r': true,
       'border-solid': true,
-      'border-black': true,
-      'hover:bg-orange': true,
+      'border-c-black': true,
+      'hover:bg-c-orange': true,
       'cursor-pointer': true,
       'flex-grow': false
     };
@@ -58,8 +58,8 @@ class Main extends LitElement {
       'w-1/2': true,
       'border-b': true,
       'border-solid': true,
-      'border-black': true,
-      'hover:bg-yellow': true,
+      'border-c-black': true,
+      'hover:bg-c-yellow': true,
       'cursor-pointer': true,
       'flex-grow': false
     };
@@ -68,15 +68,15 @@ class Main extends LitElement {
       'w-1/2': true,
       'border-r': true,
       'border-solid': true,
-      'border-black': true,
-      'hover:bg-green': true,
+      'border-c-black': true,
+      'hover:bg-c-green': true,
       'cursor-pointer': true,
       'flex-grow': false
     };
 
     this.sectionFourClasses = {
       'w-1/2': true,
-      'hover:bg-blue': true,
+      'hover:bg-c-blue': true,
       'cursor-pointer': true,
       'flex-grow': false
     };
@@ -142,8 +142,8 @@ class Main extends LitElement {
           'border-b': true,
           'border-r': true,
           'border-solid': true,
-          'border-black': true,
-          'hover:bg-orange': true,
+          'border-c-black': true,
+          'hover:bg-c-orange': true,
           'cursor-pointer': true,
           'flex-grow': false
         };
@@ -152,8 +152,8 @@ class Main extends LitElement {
           'w-1/2': true,
           'border-b': true,
           'border-solid': true,
-          'border-black': true,
-          'hover:bg-yellow': true,
+          'border-c-black': true,
+          'hover:bg-c-yellow': true,
           'cursor-pointer': true,
           'flex-grow': false
         };
@@ -162,15 +162,15 @@ class Main extends LitElement {
           'w-1/2': true,
           'border-r': true,
           'border-solid': true,
-          'border-black': true,
-          'hover:bg-green': true,
+          'border-c-black': true,
+          'hover:bg-c-green': true,
           'cursor-pointer': true,
           'flex-grow': false
         };
 
         this.sectionFourClasses = {
           'w-1/2': true,
-          'hover:bg-blue': true,
+          'hover:bg-c-blue': true,
           'cursor-pointer': true,
           'flex-grow': false
         };
@@ -191,7 +191,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': true,
             'w-1/2': false,
-            'hover:bg-orange': false,
+            'hover:bg-c-orange': false,
             'cursor-pointer': false
           }
         };
@@ -201,19 +201,19 @@ class Main extends LitElement {
           ...{
             'flex-grow': false,
             'w-1/2': false,
-            'hover:bg-yellow': true,
+            'hover:bg-c-yellow': true,
             'cursor-pointer': true
           }
         };
 
         this.sectionThreeClasses = {
           ...this.sectionThreeClasses,
-          ...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-green': true, 'cursor-pointer': true }
         };
 
         this.sectionFourClasses = {
           ...this.sectionFourClasses,
-          ...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-blue': true, 'cursor-pointer': true }
         };
         break;
       case 'two':
@@ -232,7 +232,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': false,
             'w-1/2': false,
-            'hover:bg-orange': true,
+            'hover:bg-c-orange': true,
             'cursor-pointer': true
           }
         };
@@ -242,19 +242,19 @@ class Main extends LitElement {
           ...{
             'flex-grow': true,
             'w-1/2': false,
-            'hover:bg-yellow': false,
+            'hover:bg-c-yellow': false,
             'cursor-pointer': false
           }
         };
 
         this.sectionThreeClasses = {
           ...this.sectionThreeClasses,
-          ...{ 'w-1/2': true, 'hover:bg-green': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-green': true, 'cursor-pointer': true }
         };
 
         this.sectionFourClasses = {
           ...this.sectionFourClasses,
-          ...{ 'w-1/2': true, 'hover:bg-blue': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-blue': true, 'cursor-pointer': true }
         };
         break;
       case 'three':
@@ -270,12 +270,12 @@ class Main extends LitElement {
 
         this.sectionOneClasses = {
           ...this.sectionOneClasses,
-          ...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-orange': true, 'cursor-pointer': true }
         };
 
         this.sectionTwoClasses = {
           ...this.sectionTwoClasses,
-          ...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-yellow': true, 'cursor-pointer': true }
         };
 
         this.sectionThreeClasses = {
@@ -283,7 +283,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': true,
             'w-1/2': false,
-            'hover:bg-green': false,
+            'hover:bg-c-green': false,
             'cursor-pointer': false
           }
         };
@@ -293,7 +293,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': false,
             'w-1/2': false,
-            'hover:bg-blue': true,
+            'hover:bg-c-blue': true,
             'cursor-pointer': true
           }
         };
@@ -311,12 +311,12 @@ class Main extends LitElement {
 
         this.sectionOneClasses = {
           ...this.sectionOneClasses,
-          ...{ 'w-1/2': true, 'hover:bg-orange': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-orange': true, 'cursor-pointer': true }
         };
 
         this.sectionTwoClasses = {
           ...this.sectionTwoClasses,
-          ...{ 'w-1/2': true, 'hover:bg-yellow': true, 'cursor-pointer': true }
+          ...{ 'w-1/2': true, 'hover:bg-c-yellow': true, 'cursor-pointer': true }
         };
 
         this.sectionThreeClasses = {
@@ -324,7 +324,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': false,
             'w-1/2': false,
-            'hover:bg-green': true,
+            'hover:bg-c-green': true,
             'cursor-pointer': true
           }
         };
@@ -334,7 +334,7 @@ class Main extends LitElement {
           ...{
             'flex-grow': true,
             'w-1/2': false,
-            'hover:bg-blue': false,
+            'hover:bg-c-blue': false,
             'cursor-pointer': false
           }
         };

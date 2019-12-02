@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'fonts';
 @import 'general';
-@import 'custom';
+@import 'layout';
+@import 'markdown2';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
