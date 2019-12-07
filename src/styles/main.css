@@ -2,6 +2,6 @@
 @import 'fonts';
 @import 'general';
 @import 'layout';
-@import 'markdown2';
+@import 'markdown';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
