@@ -1,8 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 
-import marked from 'marked';
-
 class Modal extends LitElement {
   // Custom Methods //////////////////
   close() {

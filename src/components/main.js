@@ -270,12 +270,20 @@ class Main extends LitElement {
 
         this.sectionOneClasses = {
           ...this.sectionOneClasses,
-          ...{ 'w-1/2': true, 'hover:bg-c-orange': true, 'cursor-pointer': true }
+          ...{
+            'w-1/2': true,
+            'hover:bg-c-orange': true,
+            'cursor-pointer': true
+          }
         };
 
         this.sectionTwoClasses = {
           ...this.sectionTwoClasses,
-          ...{ 'w-1/2': true, 'hover:bg-c-yellow': true, 'cursor-pointer': true }
+          ...{
+            'w-1/2': true,
+            'hover:bg-c-yellow': true,
+            'cursor-pointer': true
+          }
         };
 
         this.sectionThreeClasses = {
@@ -311,12 +319,20 @@ class Main extends LitElement {
 
         this.sectionOneClasses = {
           ...this.sectionOneClasses,
-          ...{ 'w-1/2': true, 'hover:bg-c-orange': true, 'cursor-pointer': true }
+          ...{
+            'w-1/2': true,
+            'hover:bg-c-orange': true,
+            'cursor-pointer': true
+          }
         };
 
         this.sectionTwoClasses = {
           ...this.sectionTwoClasses,
-          ...{ 'w-1/2': true, 'hover:bg-c-yellow': true, 'cursor-pointer': true }
+          ...{
+            'w-1/2': true,
+            'hover:bg-c-yellow': true,
+            'cursor-pointer': true
+          }
         };
 
         this.sectionThreeClasses = {
@@ -347,7 +363,6 @@ class Main extends LitElement {
   }
 
   render() {
-    const mappedSection = this.sectionMapping[this.sectionSelected] || 'none';
     this.updatedClasses();
 
     return html`
@@ -359,20 +374,38 @@ class Main extends LitElement {
               this.sectionSelect('one');
             }}"
           >
-            <section-about sectionSelected="${mappedSection}"></section-about>
+            <div class="p-2">
+              <h2 class="pb-2">${this.sectionMapping.one}</h2>
+              ${this.sectionSelected === 'one'
+                ? html`
+                    <section-about
+                      @content-select="${event => {
+                        this.contentSelect(event);
+                      }}"
+                    ></section-about>
+                  `
+                : null}
+            </div>
           </div>
+
           <div
             class="${classMap(this.sectionTwoClasses)}"
             @click="${() => {
               this.sectionSelect('two');
             }}"
           >
-            <section-tutorial
-              sectionSelected="${mappedSection}"
-              @content-select="${event => {
-                this.contentSelect(event);
-              }}"
-            ></section-tutorial>
+            <div class="p-2">
+              <h2 class="pb-2">${this.sectionMapping.two}</h2>
+              ${this.sectionSelected === 'two'
+                ? html`
+                    <section-tutorial
+                      @content-select="${event => {
+                        this.contentSelect(event);
+                      }}"
+                    ></section-tutorial>
+                  `
+                : null}
+            </div>
           </div>
         </div>
         <div class="${classMap(this.rowTwoClasses)}">
@@ -382,7 +415,18 @@ class Main extends LitElement {
               this.sectionSelect('three');
             }}"
           >
-            <section-blog sectionSelected="${mappedSection}"></section-blog>
+            <div class="p-2">
+              <h2 class="pb-2">${this.sectionMapping.three}</h2>
+              ${this.sectionSelected === 'three'
+                ? html`
+                    <section-blog
+                      @content-select="${event => {
+                        this.contentSelect(event);
+                      }}"
+                    ></section-blog>
+                  `
+                : null}
+            </div>
           </div>
           <div
             class="${classMap(this.sectionFourClasses)}"
@@ -390,7 +434,18 @@ class Main extends LitElement {
               this.sectionSelect('four');
             }}"
           >
-            <section-social sectionSelected="${mappedSection}"></section-social>
+            <div class="p-2">
+              <h2 class="pb-2">${this.sectionMapping.four}</h2>
+              ${this.sectionSelected === 'four'
+                ? html`
+                    <section-social
+                      @content-select="${event => {
+                        this.contentSelect(event);
+                      }}"
+                    ></section-social>
+                  `
+                : null}
+            </div>
           </div>
         </div>
       </main>

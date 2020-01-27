@@ -1,5 +1,15 @@
 module.exports = {
   theme: {
+    transitionProperty: {
+      'none': 'none',
+      'all': 'all',
+      'color': 'color',
+      'bg': 'background-color',
+      'border': 'border-color',
+      'colors': ['color', 'background-color', 'border-color'],
+      'opacity': 'opacity',
+      'transform': 'transform'
+    },
     extend: {
       colors: {
         'c-transparent': 'transparent',
@@ -22,5 +32,8 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-transitions')()]
+  plugins: [
+    require('tailwindcss-transitions')(),
+    require('tailwindcss-animations')()
+  ]
 };
