@@ -3,6 +3,5 @@ html {
 }
 
 body {
-  @apply h-full;
-  @apply font-brandon;
+  @apply h-full font-brandon;
 }

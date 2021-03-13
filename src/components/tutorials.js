@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-class Tutorial extends LitElement {
+class tutorials extends LitElement {
   contentSelect() {
     this.dispatchEvent(
       new CustomEvent('content-select', {
@@ -17,32 +17,32 @@ class Tutorial extends LitElement {
     return html`
       <ul>
         <li
-          class="cursor-pointer hover:underline"
+          class="cursor-default hover:underline"
           @click="${() => {
             this.contentSelect();
           }}"
         >
-          &lt Coming Soon &gt
+          &lt will get to this maybe never &gt
         </li>
         <li
-          class="cursor-pointer hover:underline"
+          class="cursor-default hover:underline"
           @click="${() => {
             this.contentSelect();
           }}"
         >
-          &lt Coming Soon &gt
+          &lt will get to this maybe never &gt
         </li>
         <li
-          class="cursor-pointer hover:underline"
+          class="cursor-default hover:underline"
           @click="${() => {
             this.contentSelect();
           }}"
         >
-          &lt Coming Soon &gt
+          &lt will get to this maybe never &gt
         </li>
       </ul>
     `;
   }
 }
 
-customElements.define('section-tutorial', Tutorial);
+customElements.define('section-tutorials', tutorials);

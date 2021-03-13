@@ -1,9 +1,9 @@
-var fs = require('fs');
+const fs = require('fs');
 
-var marked = require('marked');
+const marked = require('marked');
 
 try {
-  var data = fs.readFileSync('./src/tutorials/sample.md', 'utf8');
+  const data = fs.readFileSync('./src/tutorials/sample.md', 'utf8');
   console.log(marked(data));
 } catch (e) {
   console.log('Error:', e.stack);

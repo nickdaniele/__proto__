@@ -7,17 +7,7 @@ class About extends LitElement {
 
   render() {
     return html`
-      <ul>
-        <li class="cursor-pointer hover:underline">
-          &lt Coming Soon &gt
-        </li>
-        <li class="cursor-pointer hover:underline">
-          &lt Coming Soon &gt
-        </li>
-        <li class="cursor-pointer hover:underline">
-          &lt Coming Soon &gt
-        </li>
-      </ul>
+      
     `;
   }
 }

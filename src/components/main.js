@@ -2,9 +2,9 @@ import { LitElement, html } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 
 import './about';
-import './tutorial';
-import './blog';
-import './social';
+import './tutorials';
+import './projects';
+import './uncategorized';
 
 class Main extends LitElement {
   static get properties() {
@@ -24,9 +24,9 @@ class Main extends LitElement {
 
     this.sectionMapping = {
       one: 'about',
-      two: 'tutorial',
-      three: 'blog',
-      four: 'social'
+      two: 'projects',
+      three: 'tutorials',
+      four: 'uncategorized'
     };
 
     this.rowOneClasses = {
@@ -398,11 +398,11 @@ class Main extends LitElement {
               <h2 class="pb-2">${this.sectionMapping.two}</h2>
               ${this.sectionSelected === 'two'
                 ? html`
-                    <section-tutorial
+                    <section-projects
                       @content-select="${event => {
                         this.contentSelect(event);
                       }}"
-                    ></section-tutorial>
+                    ></section-projects>
                   `
                 : null}
             </div>
@@ -419,11 +419,11 @@ class Main extends LitElement {
               <h2 class="pb-2">${this.sectionMapping.three}</h2>
               ${this.sectionSelected === 'three'
                 ? html`
-                    <section-blog
+                    <section-tutorials
                       @content-select="${event => {
                         this.contentSelect(event);
                       }}"
-                    ></section-blog>
+                    ></section-tutorials>
                   `
                 : null}
             </div>
@@ -438,11 +438,11 @@ class Main extends LitElement {
               <h2 class="pb-2">${this.sectionMapping.four}</h2>
               ${this.sectionSelected === 'four'
                 ? html`
-                    <section-social
+                    <section-uncategorized
                       @content-select="${event => {
                         this.contentSelect(event);
                       }}"
-                    ></section-social>
+                    ></section-uncategorized>
                   `
                 : null}
             </div>
