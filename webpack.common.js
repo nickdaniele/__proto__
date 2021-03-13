@@ -6,7 +6,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: '_ _proto_ _'
+      title: 'nick daniele'
     })
   ],
   module: {
