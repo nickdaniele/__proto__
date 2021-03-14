@@ -4,7 +4,7 @@ class tutorials extends LitElement {
   contentSelect() {
     this.dispatchEvent(
       new CustomEvent('content-select', {
-        detail: { title: 'sometitle' }
+        detail: { title: 'sometitle' },
       })
     );
   }
@@ -22,7 +22,7 @@ class tutorials extends LitElement {
             this.contentSelect();
           }}"
         >
-          &lt will get to this maybe never &gt
+          &lt nothing yet... &gt
         </li>
         <li
           class="cursor-default hover:underline"
@@ -30,7 +30,7 @@ class tutorials extends LitElement {
             this.contentSelect();
           }}"
         >
-          &lt will get to this maybe never &gt
+          &lt nothing yet... &gt
         </li>
         <li
           class="cursor-default hover:underline"
@@ -38,7 +38,7 @@ class tutorials extends LitElement {
             this.contentSelect();
           }}"
         >
-          &lt will get to this maybe never &gt
+          &lt nothing yet... &gt
         </li>
       </ul>
     `;

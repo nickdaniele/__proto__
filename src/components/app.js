@@ -15,7 +15,7 @@ class App extends LitElement {
   constructor() {
     super();
 
-    this.sectionSelected = 'none';
+    this.sectionSelected = 'one';
     this.modalStatus = 'closed';
   }
 

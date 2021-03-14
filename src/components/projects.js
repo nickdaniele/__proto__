@@ -8,15 +8,9 @@ class projects extends LitElement {
   render() {
     return html`
       <ul>
-        <li class="cursor-default hover:underline">
-          &lt will get to this maybe never &gt
-        </li>
-        <li class="cursor-default hover:underline">
-          &lt will get to this maybe never &gt
-        </li>
-        <li class="cursor-default hover:underline">
-          &lt will get to this maybe never &gt
-        </li>
+        <li class="cursor-default hover:underline">&lt nothing yet... &gt</li>
+        <li class="cursor-default hover:underline">&lt nothing yet... &gt</li>
+        <li class="cursor-default hover:underline">&lt nothing yet... &gt</li>
       </ul>
     `;
   }

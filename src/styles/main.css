@@ -3,5 +3,6 @@
 @import 'general';
 @import 'layout';
 @import 'markdown';
+@import 'custom';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
