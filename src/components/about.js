@@ -45,13 +45,21 @@ class About extends LitElement {
         <p class="inline-block">links:</p>
         <ul class="inline-block">
           <li class="inline-block">
-            <a class="underline" href="https://github.com/nickdaniele">
+            <a
+              class="underline"
+              href="https://github.com/nickdaniele"
+              target="_blank"
+            >
               github
             </a>
             ,
           </li>
           <li class="inline-block">
-            <a class="underline" href="https://www.linkedin.com/in/ngdaniele/">
+            <a
+              class="underline"
+              href="https://www.linkedin.com/in/ngdaniele/"
+              target="_blank"
+            >
               linkedin
             </a>
           </li>
