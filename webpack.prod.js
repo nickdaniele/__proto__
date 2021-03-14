@@ -42,5 +42,9 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  // Not sure why needed. MiniCssExtractPlugin.loader complaines otherwise.
+  output: {
+    publicPath: ''
   }
 });
